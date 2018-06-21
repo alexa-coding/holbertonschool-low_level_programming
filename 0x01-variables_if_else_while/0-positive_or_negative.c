@@ -4,7 +4,8 @@
 /* more headers goes there */
 
 /**
-* main - prints whether the number in the variable n is positive, negative, or zero 
+* main - prints whether the number in the variable n is
+* positive, negative, or zero
 * Return: 0 = Success
 */
 int main(void)
