@@ -9,7 +9,7 @@ void print_times_table(int n)
 {
 	int s, o, b, e, r, q;
 
-	if (n < 15 && n > 0)
+	if (n <= 15 && n > 0)
 	{
 		for (s = 0; s <= n; s++)/*vertical values of the table*/
 		{
@@ -79,5 +79,10 @@ void print_times_table(int n)
 			}
 			_putchar('\n');
 		}
+	}
+	else if (n == 0)
+	{
+		_putchar('0');
+		_putchar('\n');
 	}
 }
