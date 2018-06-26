@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i;
-	char c[10] = "Holberton\n";
+	char c[] = "Holberton\n";
 
 	for (i = 0; i <= 10; i++)
 		_putchar(c[i]);
