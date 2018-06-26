@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- * times_table - prints the 9 times table
+ * print_times_table - prints the 9 times table
+ * @n: contains integer value set by main
  */
 
 void print_times_table(int n)
@@ -61,21 +62,18 @@ void print_times_table(int n)
 						_putchar(q + '0');
 						_putchar(',');
 					}
-					else
+					else if (o == 0)
 					{
-						if (o ==0)
-						{
-							_putchar(b + '0');
-							_putchar(',');
-						}
-						else
-						{
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
 						_putchar(b + '0');
 						_putchar(',');
-						}
+					}
+					else
+					{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(b + '0');
+					_putchar(',');
 					}
 				}
 			}
