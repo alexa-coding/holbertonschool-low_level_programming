@@ -8,17 +8,15 @@
 
 int main(void)
 {
-	long sum = 0, x = 1, y = 2, z;
+	long sum = 0, x = 0, y = 1, z;
 
 	while (z <= 4000000)
 	{
+		if (z % 2 == 0)
+			sum += z;
 		z = x + y;
 		x = y;
 		y = z;
-		if (z % 2 == 0)
-			sum += z;
-		else
-			continue;
 	}
 	printf("%ld\n", sum);
 
