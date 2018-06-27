@@ -1,28 +1,26 @@
-
 #include <stdio.h>
 
 /**
- * main - prints the first 50 fibonacci numbers starting with 1 and 2,
- * followed by a new line.
+ * main - prints the sum of the even fibonacci numbers
+ * followed by a new line
  * Return: Success
  */
 
 int main(void)
 {
-	int x = 1, y = 2, z, w;
+	long sum = 0, x = 1, y = 2, z;
 
-	printf("%d, %d, ", x, y);
-
-	while (w <= 50)
+	while (z <= 4000000)
 	{
 		z = x + y;
 		x = y;
 		y = z;
-		if (w == 50)
-			printf("%d\n", z);
+		if (z % 2 == 0)
+			sum += z;
 		else
-			printf("%d, ", z);
-		w++;
+			continue;
 	}
+	printf("%ld\n", sum);
+
 	return (0);
 }
