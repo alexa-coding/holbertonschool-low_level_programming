@@ -14,12 +14,12 @@ int main(void)
 
 	printf("%ld, %ld, ", x, y);
 
-	while (w <= 50)
+	while (w <= 46)
 	{
 		z = x + y;
 		x = y;
 		y = z;
-		if (w == 50)
+		if (w == 46)
 			printf("%ld\n", z);
 		else
 			printf("%ld, ", z);
