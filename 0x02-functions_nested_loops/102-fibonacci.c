@@ -9,9 +9,10 @@
 
 int main(void)
 {
-	int x = 1, y = 2, z, w;
+	long  x = 1, y = 2, z;
+	int w;
 
-	printf("%d, %d, ", x, y);
+	printf("%ld, %ld, ", x, y);
 
 	while (w <= 50)
 	{
@@ -19,9 +20,9 @@ int main(void)
 		x = y;
 		y = z;
 		if (w == 50)
-			printf("%d\n", z);
+			printf("%ld\n", z);
 		else
-			printf("%d, ", z);
+			printf("%ld, ", z);
 		w++;
 	}
 	return (0);
