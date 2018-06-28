@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - prints 1-100. Replaces all multiples of 3 with "Fizz" and multiples of 5 with "Buzz".
+ * main - prints 1-100. Replaces all multiples of 3 with
+ * "Fizz" and multiples of 5 with "Buzz".
  * Return: Success
  */
 
@@ -11,7 +12,7 @@ int main(void)
 
 	for (n = 1; n <= 100; n++)
 	{
-		if (n % 3 == 0 && n % 5 ==0)
+		if (n % 3 == 0 && n % 5 == 0)
 			printf(" FizzBuzz");
 		else if (n % 3 == 0)
 			printf(" Fizz");
