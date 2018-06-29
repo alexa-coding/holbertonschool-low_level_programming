@@ -15,8 +15,6 @@ int add(int x, int y);
 void print_to_98(int n);
 void print_times_table(int n);
 int _isupper(int c);
-<<<<<<< HEAD
-=======
 int _isdigit(int c);
 int mul(int a, int b);
 void print_numbers(void);
@@ -26,6 +24,5 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
->>>>>>> 3ee643ac400db546c1b772fb9dc7e6b472dfb4f6
 
 #endif
