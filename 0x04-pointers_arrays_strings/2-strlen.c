@@ -2,7 +2,9 @@
 
 /**
   * _strlen - returns the length of a string
-  * @*s: pointer that points to an int variable with a value assigned by 2-main.c
+  * @s: pointer that points to an int variable with a value assigned by
+  * 2-main.c
+  * Return: string length
   */
 
 int _strlen(char *s)
