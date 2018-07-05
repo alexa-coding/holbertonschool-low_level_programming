@@ -8,12 +8,9 @@
 
 void _puts(char *str)
 {
-	int elnum = 0;
-
 	while (*str != '\0')
 	{
 		_putchar(*str);
-		elnum++;
 		str++;
 	}
 	_putchar('\n');
