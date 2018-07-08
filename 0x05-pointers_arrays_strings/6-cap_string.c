@@ -12,6 +12,9 @@ char *cap_string(char *s)
 
 	for (el = 0; s[el] != '\0'; el++)
 	{
+		if (s[0] >= 'a' && s[0] <= 'z')
+			s[0] -= 32;
+
 		while (s[el] == '.' || s[el] == ',' || s[el] == ';' || s[el] == '"'
 || s[el] == '?' || s[el] == '!' || s[el] == '(' || s[el] == ')' ||
 s[el] == '{' || s[el] == '}' || s[el] == 32 || s[el] == 9 || s[el] == '\n')
@@ -21,6 +24,5 @@ s[el] == '{' || s[el] == '}' || s[el] == 32 || s[el] == 9 || s[el] == '\n')
 			break;
 		}
 	}
-
-	return (s);
+		return (s);
 }
