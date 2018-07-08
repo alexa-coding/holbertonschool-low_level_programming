@@ -12,8 +12,8 @@ char *cap_string(char *s)
 
 	for (el = 0; s[el] != '\0'; el++)
 	{
-		while (s[el] == '.' || s[el] == ',' || s[el] == ';' || s[el] == '\"'
-|| s[el] == '\?' || s[el] == '!' || s[el] == '(' || s[el] == ')' ||
+		while (s[el] == '.' || s[el] == ',' || s[el] == ';' || s[el] == '"'
+|| s[el] == '?' || s[el] == '!' || s[el] == '(' || s[el] == ')' ||
 s[el] == '{' || s[el] == '}' || s[el] == 32 || s[el] == 9 || s[el] == '\n')
 		{
 			if (s[el + 1] >= 'a' && s[el + 1] <= 'z')
