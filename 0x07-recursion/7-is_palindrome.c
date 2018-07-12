@@ -17,7 +17,7 @@ int len(char *s)
   * pal - determines if a string is a palidrome or not
   * @a: pointer to beginning or string
   * @b: pointer to end of string
-  * @temp: holds the initial value of a
+  * @s: pointer to a string
   * Return: 1 if string is palidrome, 0 otherwise
   */
 
@@ -29,6 +29,12 @@ int pal(char *s, int a, int b)
 		return (pal(s, a + 1, b - 1));
 	return (0);
 }
+
+/**
+  * is_palindrome - returns pal
+  * @s: pointer to a string
+  * Return: returns pal
+  */
 
 int is_palindrome(char *s)
 {
