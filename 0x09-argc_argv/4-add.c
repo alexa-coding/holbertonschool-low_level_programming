@@ -6,7 +6,7 @@
   * main - prints the sum of two integers
   * @argc: argument count
   * @argv: argument vector
-  * @Return: 0 upon success, non-zero otherwise
+  * Return: 0 upon success, non-zero otherwise
   */
 
 int main(int argc, char *argv[])
