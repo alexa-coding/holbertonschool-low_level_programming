@@ -2,7 +2,8 @@
 
 /**
   * main - prints name of file followed by a new line
-  * @agrv: argument vector
+  * @argv: argument vector
+  * @argc: argument counter
   * Return: 0 if successful, non-zero otherwise
   */
 
