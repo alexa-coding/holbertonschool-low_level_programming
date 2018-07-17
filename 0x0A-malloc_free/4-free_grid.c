@@ -3,8 +3,8 @@
 
 /**
   * free_grid - frees the 2D array created in alloc_grid
-  * @grid:
-  * @height:
+  * @grid: pointer to int
+  * @height: contains an int
   */
 
 void free_grid(int **grid, int height)
