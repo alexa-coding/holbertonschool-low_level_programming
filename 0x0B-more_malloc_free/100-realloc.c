@@ -6,7 +6,7 @@
   * @ptr: pointer to the memory previously allocated
   * @old_size: size, in bytes, of the allocated space for ptr
   * @new_size: new size, in bytes of the new memory block
-  * Return: 
+  * Return: pointer to new memory block, NULL otherwise
   */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -21,6 +21,15 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		free(ptr);
 		return (NULL);
 	}
+	if (ptr == NULL)
+	{
+		res = malloc(new_size);
+		if (res == NULL)
+		{
+			free(res);
+			return (NULL);
+		}
+	}
 
 	res = malloc(new_size);
 	if (res == NULL)
@@ -31,7 +40,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	for (i = 0; i < old_size; i++)
 	{
-		res[i] = *((char *)ptr + 1);
+		res[i] = *((char *)ptr + i);
 	}
+	free(ptr);
 	return (res);
 }
