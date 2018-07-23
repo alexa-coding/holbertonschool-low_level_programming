@@ -1,3 +1,4 @@
-#ifndef ABS(x)
+#ifndef DOG
+#define DOG
 #define ABS(x) (x > 0 ? x : (x * -1))
 #endif
