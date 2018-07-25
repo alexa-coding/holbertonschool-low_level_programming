@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 	if (get_op_func(argv[2]) == NULL)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 
 	num1 = atoi(argv[1]);
