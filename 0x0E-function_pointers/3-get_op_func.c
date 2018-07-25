@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
-  * (*get_op_func(char *s)) - selects the correct function
+  * get_op_func - selects the correct function
   * to perform the operation asked by the user
-  * @int: contains int value
+  * @s: pointer to string
   * Return: pointer to function that will perform the desired operation
   */
 
