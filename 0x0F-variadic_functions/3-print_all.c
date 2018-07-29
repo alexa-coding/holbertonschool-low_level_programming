@@ -37,8 +37,7 @@ void print_all(const char * const format, ...)
 			}
 			case 'f':
 			{
-				printf("%.6g", va_arg(val, double));
-				/* .6g prints total numeric width of number */
+				printf("%f", va_arg(val, double));
 				break;
 			}
 			case 's':
