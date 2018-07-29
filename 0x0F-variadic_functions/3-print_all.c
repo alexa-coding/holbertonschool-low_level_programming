@@ -44,16 +44,13 @@ void print_all(const char * const format, ...)
 			case 's':
 			{
 				var = va_arg(val, char *);
-				if (var)
-				{
-					printf("%s", var);
-					break;
-				}
-				else
+				if (!var)
 				{
 					printf("(nil)");
 					break;
 				}
+				printf("%s", var);
+				break;
 			}
 			default:
 			{
