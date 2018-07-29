@@ -6,7 +6,6 @@
 /**
  * print_all - prints almost anything
  * @format: list of types of arguments passed to the function
- * @n: number of strings
  */
 
 void print_all(const char * const format, ...)
@@ -19,7 +18,7 @@ void print_all(const char * const format, ...)
 
 	while (format[len])
 		len++;
-	
+
 	while (format[i]) /* iterate through parameters and determine types*/
 	{
 		flag = 0;
