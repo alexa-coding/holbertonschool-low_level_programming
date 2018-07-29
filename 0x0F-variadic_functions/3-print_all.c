@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 
 	va_start(val, format);
 
-	while (format && format[i]) /* iterate through parameters and determine types*/
+	while (format && format[i])
 	{
 		flag = 0;
 
