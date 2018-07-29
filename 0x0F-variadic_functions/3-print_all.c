@@ -10,16 +10,13 @@
 
 void print_all(const char * const format, ...)
 {
-	int i = 0, len = 0, flag;
+	int i = 0, flag;
 	va_list val;
 	char *var;
 
 	va_start(val, format);
 
-	while (format[len])
-		len++;
-
-	while (format[i]) /* iterate through parameters and determine types*/
+	while (format && format[i]) /* iterate through parameters and determine types*/
 	{
 		flag = 0;
 
@@ -54,7 +51,7 @@ void print_all(const char * const format, ...)
 				break;
 			}
 		}
-		if (i < len - 1 && flag == 0)
+		if (format[i + 1] != '\0' && flag == 0)
 			printf(", ");
 		i++;
 		}
