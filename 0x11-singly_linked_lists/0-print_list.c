@@ -4,7 +4,7 @@
 
 /**
   * print_list - prints the elements of list_t
-  * h: head of link list
+  * @h: head of link list
   * Return: number of nodes
   */
 
