@@ -13,6 +13,9 @@ int set_bit(unsigned long int *n, unsigned int index)
 	unsigned int i;
 	unsigned long int temp = *n, temp2;
 
+	if (index >= sizeof(n) * 8)
+		return (-1);
+
 	for (temp2 = 1, i = 0; i < index; i++)
 		temp2 <<= 1;
 
