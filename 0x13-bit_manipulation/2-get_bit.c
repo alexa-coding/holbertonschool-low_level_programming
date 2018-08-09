@@ -13,7 +13,6 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned long int tmp;
 	char *arr;
 	int count;
-	unsigned int tmp2;
 
 	if (index >= sizeof(n) * 8)
 		return (-1);
@@ -23,7 +22,6 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	for (tmp = n, count = 0; tmp > 0; count++)
 		tmp >>= 1;
-	tmp2 = count;
 
 	arr = malloc(sizeof(count));
 	if (arr == NULL)
