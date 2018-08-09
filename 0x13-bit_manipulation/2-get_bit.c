@@ -13,6 +13,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned long int tmp;
 	char arr[1024];
 	int count;
+	unsigned int tmp2;
 
 	if (index >= sizeof(n) * 8)
 		return (-1);
@@ -22,7 +23,10 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	for (tmp = n, count = 0; tmp > 0; count++)
 		tmp >>= 1;
+	tmp2 = count;
 
+	if (index > tmp2 && index < sizeof(n) * 8)
+		return (0);
 	for (count--; count >= 0; count--)
 	{
 		tmp = n >> count;
