@@ -18,7 +18,7 @@ int myPow(int x, int y)
 }
 
 /**
-  * int binary_to_uint - converts a binary number to an unsigned int
+  * binary_to_uint - converts a binary number to an unsigned int
   * @b: pointer to string of 1's and 0's (binary number)
   * Return: converted number or 0 if program fails
   */
