@@ -23,6 +23,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	tmp2 = count;
 
 	arr = malloc(sizeof(count));
+	if (arr == NULL)
+		return (-1);
 
 	if (index > tmp2)
 		return (-1);
