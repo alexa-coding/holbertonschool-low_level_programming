@@ -25,7 +25,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	arr = malloc(sizeof(count));
 
 	if (index > tmp2)
-		return (0);
+		return (-1);
 
 	for (count--; count >= 0; count--)
 	{
