@@ -29,9 +29,6 @@ int get_bit(unsigned long int n, unsigned int index)
 	if (arr == NULL)
 		return (-1);
 
-	if (index > tmp2)
-		return (-1);
-
 	for (count--; count >= 0; count--)
 	{
 		tmp = n >> count;
